@@ -1,0 +1,5 @@
+
+# Ignore node modules and macOS files
+node_modules/
+.DS_Store
+frontend/.DS_Store
