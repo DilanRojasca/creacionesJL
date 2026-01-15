@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './LoginForm.css';
-import { loginUser } from '../../services/api';
+// import { loginUser } from '../../services/api';
 
 const handleLogin = async (e: React.FormEvent) => {
   e.preventDefault();
@@ -10,7 +10,7 @@ const handleLogin = async (e: React.FormEvent) => {
   const email = formData.get("email") as string;
   const password = formData.get("password") as string;
   try {
-    await loginUser(email, password);
+    // await loginUser(email, password);
     window.location.href = "/";
   } catch (error) {
     console.error("Error al iniciar sesión:", error);

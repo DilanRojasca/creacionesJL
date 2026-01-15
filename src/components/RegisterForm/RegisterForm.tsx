@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './RegisterForm.css';
-import { registerUser as registerUserAPI } from '../../services/api';
+// import { registerUser as registerUserAPI } from '../../services/api';
 
 const RegisterForm: React.FC = () => {
   const [firstName, setFirstName] = useState('');
@@ -64,7 +64,7 @@ const RegisterForm: React.FC = () => {
 
     if (isValid) {
       try {
-        await registerUserAPI(firstName, lastName, email, password);
+        // await registerUserAPI(firstName, lastName, email, password);
         setFirstName('');
         setLastName('');
         setEmail('');

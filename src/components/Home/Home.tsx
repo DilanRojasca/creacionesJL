@@ -7,7 +7,7 @@ const Home: React.FC = () => {
     <div className="home-container">
       <div className="home-content">
         <h1 className="home-title">Bienvenido a Creaciones JL</h1>
-        <p className="home-subtitle">Empresa de conflecciones</p>
+        <p className="home-subtitle">Empresa de confecciones</p>
         <div className="home-buttons">
           <Link to="/login" className="home-btn primary-btn">
             Iniciar Sesión
