@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
+import Button from '../Button/Button';
 import './LoginForm.css';
 
 const LoginForm: React.FC = () => {
@@ -75,9 +76,9 @@ const LoginForm: React.FC = () => {
               />
           </div>
           {error && <p className="error-message">{error}</p>}
-          <button type="submit" disabled={isSubmitting}>
+          <Button type="submit" variant="secondary" disabled={isSubmitting}>
             {isSubmitting ? 'Iniciando sesión...' : 'Entrar'}
-          </button>
+          </Button>
       </form>
       <div className="login-form-footer">
               <p>¿Olvidaste tu contraseña? <a href="/forgot-password">Recuperar contraseña</a></p>

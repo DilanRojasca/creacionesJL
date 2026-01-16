@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import './RegisterForm.css';
+import Button from '../Button/Button';
 
 const RegisterForm: React.FC = () => {
   const { register } = useAuth();
@@ -215,9 +216,9 @@ const RegisterForm: React.FC = () => {
         />
       </div>
       {errors.general && <p className="error-message">{errors.general}</p>}
-      <button type="submit" disabled={isSubmitting}>
+      <Button type="submit" variant="tertiary" disabled={isSubmitting}>
         {isSubmitting ? 'Registrando...' : 'Registrarse'}
-      </button>
+      </Button>
     </form>
     <div className="register-form-footer">
         <p><Link to="/login">Ya tienes cuenta? Inicia sesión</Link></p>
