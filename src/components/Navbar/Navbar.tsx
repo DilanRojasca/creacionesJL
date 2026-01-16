@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Button from '../Button/Button';
 import './Navbar.css';
 
 const Navbar: React.FC = () => {
@@ -7,15 +8,16 @@ const Navbar: React.FC = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          Creaciones JL
+          <img src="/logo.svg" alt="Creaciones JL Logo" className="navbar-logo-img" />
+          <span>Creaciones JL</span>
         </Link>
         <div className="navbar-buttons">
-          <Link to="/login" className="navbar-btn login-btn">
+          <Button to="/login" variant="tertiary" size="medium">
             Iniciar Sesión
-          </Link>
-          <Link to="/register" className="navbar-btn register-btn">
+          </Button>
+          <Button to="/register" variant="primary" size="medium">
             Registrarse
-          </Link>
+          </Button>
         </div>
       </div>
     </nav>

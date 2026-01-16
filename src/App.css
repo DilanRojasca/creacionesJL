@@ -1,11 +1,9 @@
 .App {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   min-height: 100vh;
-  /* background-color: #f0f2f5; Eliminado para usar el fondo blanco global */
+  width: 100%;
   font-family: Arial, sans-serif;
-  width: 100%; /* Asegura que ocupe todo el ancho */
 }
 
 .logo {

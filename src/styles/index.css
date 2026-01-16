@@ -4,16 +4,92 @@ html, body, #root {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
-  background-color: #ffffff;
+  background-color: var(--bg-primary);
 }
 
 :root {
+  /* === PALETA DE COLORES - SISTEMA DE DISEÑO === */
+  
+  /* Colores base - Identidad de marca */
+  --color-gold-strong: #deb97a;
+  --color-gold-light: #efcda7;
+  --color-pink-light: #f9dbd9;
+  --color-rose-powder: #f4c2c2;
+  --color-rose-accent: #e8a0a0;
+  --color-beige-pink: #f5e6e8;
+  --color-brown-soft: #8b6f5c;
+  
+  /* Backgrounds */
+  --bg-primary: #ffffff;
+  --bg-secondary: #fefefe;
+  --bg-tertiary: var(--color-beige-pink);
+  --bg-gradient-main: linear-gradient(135deg, #fefefe 0%, #f9dbd9 50%, #efcda7 100%);
+  --bg-gradient-soft: linear-gradient(135deg, #f9dbd9 0%, #efcda7 100%);
+  --bg-gradient-accent: linear-gradient(135deg, #deb97a 0%, #e8a0a0 100%);
+  --bg-card: #ffffff;
+  --bg-input: #f9f9f9;
+  --bg-input-focus: #ffffff;
+  
+  /* Textos */
+  --text-primary: var(--color-brown-soft);
+  --text-secondary: #555555;
+  --text-tertiary: #666666;
+  --text-light: #ffffff;
+  --text-accent: var(--color-gold-strong);
+  --text-error: #dc3545;
+  
+  /* Bordes */
+  --border-light: #e0e0e0;
+  --border-medium: #d4a5a5;
+  --border-accent: var(--color-gold-strong);
+  --border-radius-sm: 6px;
+  --border-radius-md: 12px;
+  --border-radius-lg: 30px;
+  --border-radius-full: 50px;
+  
+  /* Botones - Primarios */
+  --btn-primary-bg: var(--bg-gradient-accent);
+  --btn-primary-text: var(--text-light);
+  --btn-primary-hover-transform: translateY(-3px);
+  
+  /* Botones - Secundarios */
+  --btn-secondary-bg: transparent;
+  --btn-secondary-text: var(--color-gold-strong);
+  --btn-secondary-border: 2px solid var(--color-gold-strong);
+  --btn-secondary-hover-bg: var(--color-gold-strong);
+  --btn-secondary-hover-text: var(--text-light);
+  
+  /* Botones - Terciarios */
+  --btn-tertiary-bg: var(--bg-primary);
+  --btn-tertiary-text: var(--text-primary);
+  --btn-tertiary-border: 2px solid var(--border-accent);
+  --btn-tertiary-hover-bg: #f0f0f0;
+  
+  /* Sombras */
+  --shadow-sm: 0 2px 8px rgba(222, 185, 122, 0.2);
+  --shadow-md: 0 4px 15px rgba(222, 185, 122, 0.3);
+  --shadow-lg: 0 8px 25px rgba(0, 0, 0, 0.3);
+  --shadow-card: 0 10px 40px rgba(0, 0, 0, 0.2);
+  
+  /* Transiciones */
+  --transition-fast: all 0.2s ease;
+  --transition-normal: all 0.3s ease;
+  --transition-slow: all 0.5s ease;
+  
+  /* Espaciado */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+
+  /* Fuentes */
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: #213547;
+  color-scheme: light;
+  color: var(--text-primary);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

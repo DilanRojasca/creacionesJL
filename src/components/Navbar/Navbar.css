@@ -1,7 +1,7 @@
 .navbar {
-  background-color: #2c3e50;
+  background: var(--bg-gradient-soft);
   padding: 1rem 2rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--shadow-sm);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -18,51 +18,37 @@
 .navbar-logo {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #fff;
+  color: var(--text-primary);
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: var(--transition-normal);
   min-width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
 }
 
 .navbar-logo:hover {
-  color: #3498db;
+  color: var(--text-accent);
+}
+
+.navbar-logo-img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  transition: var(--transition-normal);
+  /* Filtro para cambiar color del SVG según el color del texto */
+  filter: brightness(0) saturate(100%) invert(49%) sepia(10%) saturate(1073%) hue-rotate(346deg) brightness(92%) contrast(88%);
+}
+
+.navbar-logo:hover .navbar-logo-img {
+  /* Color dorado al hacer hover */
+  filter: brightness(0) saturate(100%) invert(66%) sepia(29%) saturate(520%) hue-rotate(346deg) brightness(93%) contrast(86%);
 }
 
 .navbar-buttons {
   display: flex;
   gap: 1.5rem;
   align-items: center;
-}
-
-.navbar-btn {
-  padding: 0.7rem 2rem;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  white-space: nowrap;
-}
-
-.login-btn {
-  color: #3498db;
-  border: 2px solid #3498db;
-  background-color: transparent;
-}
-
-.login-btn:hover {
-  background-color: #3498db;
-  color: white;
-}
-
-.register-btn {
-  color: white;
-  background-color: #27ae60;
-  border: 2px solid #27ae60;
-}
-
-.register-btn:hover {
-  background-color: #229954;
-  border-color: #229954;
 }
 
 @media (max-width: 768px) {

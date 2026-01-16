@@ -5,25 +5,25 @@
   justify-content: center;
   align-items: center;
   min-height: calc(100vh - 60px);
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  padding: 2rem 1.5rem;
+  background: var(--bg-gradient-main);
+  padding: var(--spacing-lg) var(--spacing-md);
   margin: 0;
   width: 100%;
 }
 
 .register-form {
-  background-color: #fff;
+  background-color: var(--bg-card);
   padding: clamp(2rem, 5vw, 3rem);
-  border-radius: 12px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-card);
   width: 100%;
   max-width: 450px;
   text-align: center;
 }
 
 .register-form h2 {
-  margin-bottom: 2rem;
-  color: #333;
+  margin-bottom: var(--spacing-lg);
+  color: var(--text-accent);
   font-size: clamp(1.5rem, 3vw, 2rem);
 }
 
@@ -34,8 +34,8 @@
 
 .form-group label {
   display: block;
-  margin-bottom: 0.5rem;
-  color: #555;
+  margin-bottom: var(--spacing-xs);
+  color: var(--text-secondary);
   font-weight: 600;
   font-size: clamp(0.9rem, 2vw, 1rem);
 }
@@ -43,68 +43,48 @@
 .form-group input {
   width: 100%;
   padding: 0.9rem 1rem;
-  border: 2px solid #e0e0e0;
-  border-radius: 6px;
+  border: 2px solid var(--border-light);
+  border-radius: var(--border-radius-sm);
   box-sizing: border-box;
-  background-color: #f9f9f9;
-  color: #000;
+  background-color: var(--bg-input);
+  color: var(--text-primary);
   font-size: 1rem;
-  transition: border-color 0.3s ease;
+  transition: var(--transition-normal);
 }
 
 .form-group input:focus {
   outline: none;
-  border-color: #27ae60;
-  background-color: #fff;
+  border-color: var(--border-accent);
+  background-color: var(--bg-input-focus);
 }
 
 .error-message {
-  color: #dc3545;
+  color: var(--text-error);
   font-size: 0.85rem;
-  margin-top: 0.5rem;
+  margin-top: var(--spacing-xs);
   text-align: left;
 }
 
-.register-form button {
-  width: 100%;
-  padding: 1rem;
-  background-color: #27ae60;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  font-size: clamp(1rem, 2vw, 1.1rem);
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  margin-top: 1.5rem;
-}
-
-.register-form button:hover {
-  background-color: #229954;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-}
-
 .register-form-footer {
-  margin-top: 2rem;
+  margin-top: var(--spacing-lg);
   text-align: center;
 }
 
 .register-form-footer p {
   margin: 0.8rem 0;
   font-size: clamp(0.85rem, 2vw, 0.95rem);
-  color: white;
+  color: var(--text-secondary);
 }
 
 .register-form-footer a {
-  color: #fff;
+  color: var(--text-accent);
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s ease;
+  transition: var(--transition-normal);
 }
 
 .register-form-footer a:hover {
-  color: #3498db;
+  color: var(--color-rose-accent);
 }
 
 .back-link {

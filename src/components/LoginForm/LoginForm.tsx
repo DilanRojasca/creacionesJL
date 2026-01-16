@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Button from '../Button/Button';
 import './LoginForm.css';
 // import { loginUser } from '../../services/api';
 
@@ -30,7 +31,9 @@ const LoginForm: React.FC = () => {
               <label htmlFor="password">Contraseña:</label>
               <input type="password" id="password" name="password" required />
           </div>
-          <button type="submit">Entrar</button>
+          <Button type="submit" variant="primary" fullWidth>
+            Entrar
+          </Button>
       </form>
       <div className="login-form-footer">
               <p>¿Olvidaste tu contraseña? <a href="/forgot-password">Recuperar contraseña</a></p>

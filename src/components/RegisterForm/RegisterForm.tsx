@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Button from '../Button/Button';
 import './RegisterForm.css';
 // import { registerUser as registerUserAPI } from '../../services/api';
 
@@ -138,7 +139,9 @@ const RegisterForm: React.FC = () => {
         />
         {errors.confirmPassword && <p className="error-message">{errors.confirmPassword}</p>}
       </div>
-      <button type="submit">Registrarse</button>
+      <Button type="submit" variant="primary" fullWidth>
+        Registrarse
+      </Button>
     </form>
     <div className="register-form-footer">
         <p><Link to="/login">Ya tienes cuenta? Inicia sesión</Link></p>
